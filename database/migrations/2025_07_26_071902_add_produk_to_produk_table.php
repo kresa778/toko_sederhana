@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('produk', function (Blueprint $table) {
+        Schema::create('produk', function (Blueprint $table) {
             $table->bigIncrements('id'); //primary key
             $table->string('nama');
             $table->decimal('harga', 8, 2);

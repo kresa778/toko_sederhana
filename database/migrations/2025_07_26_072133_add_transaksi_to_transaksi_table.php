@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('transaksi', function (Blueprint $table) {
+        Schema::create('transaksi', function (Blueprint $table) {
             $table->bigIncrements('id'); // Primary key
             $table->date('tanggal_transaksi');
             $table->integer('jumlah');

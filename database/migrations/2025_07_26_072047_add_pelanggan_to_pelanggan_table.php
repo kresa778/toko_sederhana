@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('pelanggan', function (Blueprint $table) {
+        Schema::create('pelanggan', function (Blueprint $table) {
             $table->bigIncrements('id'); //primary key
             $table->string('nama_lengkap');
             $table->string('email')->unique();
